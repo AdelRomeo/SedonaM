@@ -1,0 +1,27 @@
+@media (min-width: 800px) {
+	
+	.main-sedona--greetings{
+		background-color: $main-color;
+	}
+
+	.main-sedona--title{
+		@include margin-auto;
+		font-family: $main-font;
+		font-weight: bold;
+		font-size: 21px;
+		line-height: 26px;
+		text-align: center;
+		width: 450px;
+		margin-top: 0;
+		margin-bottom: 30px;
+	}
+
+	.main-sedona--description{
+		@include margin-auto;
+		text-align: center;
+		font-family: $main-font;
+		font-size: 14px;
+		line-height: 26px;
+		color: #333333;
+	}
+}

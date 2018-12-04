@@ -9,6 +9,16 @@
 	
 	.main-header{
 		position: relative;
+		&::after {
+			content: "";
+			position: absolute;
+			height: 350px;
+			width: 460px;
+			left: 370px;
+			top: 134px;
+			background-image: url(../img/text-index.png);
+			background-repeat: no-repeat;
+		}
 		&::before  {
 			content: "";
 			position: absolute;
@@ -16,6 +26,7 @@
 			height: 57px;
 			width: 1200px;
 			background-image: url(../img/intro-triangle.png);
+			background-repeat: no-repeat;
 		}
 	}
 
@@ -34,7 +45,7 @@
 	}
 
 	.main-header--item a{
-		font-family: $bold-font;
+		font-family: $main-font;
 		font-size: 14px;
 		font-weight: bold;
 		line-height: 26px;
