@@ -16,13 +16,23 @@
     margin-right: auto; }
   .main-header {
     position: relative; }
+    .main-header::after {
+      content: "";
+      position: absolute;
+      height: 350px;
+      width: 460px;
+      left: 370px;
+      top: 134px;
+      background-image: url(../img/text-index.png);
+      background-repeat: no-repeat; }
     .main-header::before {
       content: "";
       position: absolute;
       bottom: 57px;
       height: 57px;
       width: 1200px;
-      background-image: url(../img/intro-triangle.png); }
+      background-image: url(../img/intro-triangle.png);
+      background-repeat: no-repeat; }
   .main-header--logo {
     position: absolute;
     left: 500px; }
@@ -33,7 +43,7 @@
     padding-top: 15px;
     padding-bottom: 15px; }
   .main-header--item a {
-    font-family: PT Sans Bold, Arial, sans-serif;
+    font-family: PT Sans, Arial, sans-serif;
     font-size: 14px;
     font-weight: bold;
     line-height: 26px;
@@ -47,5 +57,28 @@
     background-image: url(../img/back-desktop.jpg);
     background-repeat: no-repeat;
     min-height: 575px; } }
+
+@media (min-width: 800px) {
+  .main-sedona--greetings {
+    background-color: #FFFFFF; }
+  .main-sedona--title {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: PT Sans, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    width: 450px;
+    margin-top: 0;
+    margin-bottom: 30px; }
+  .main-sedona--description {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: PT Sans, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    color: #333333; } }
 
 /*# sourceMappingURL=style.css.map */
