@@ -6,11 +6,7 @@
 
 	.main-sedona--title{
 		@include margin-auto;
-		font-family: $main-font;
-		font-weight: bold;
-		font-size: 21px;
-		line-height: 26px;
-		text-align: center;
+		@include title-style;
 		width: 450px;
 		margin-top: 0;
 		margin-bottom: 30px;
