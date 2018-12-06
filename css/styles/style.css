@@ -2,7 +2,7 @@
 /*белый*/
 /*серый. background ласт блоков*/
 /*голубой*/
-/*цвет для текста голубых блоков*/
+/*белый. цвет для текста голубых блоков*/
 /*цвет текста белыx блоков*/
 * {
   list-style: none;
@@ -171,5 +171,45 @@ h1, h2, h3, h4, span, p {
     background-color: #EEEEEE; }
     .advantages--item__last span {
       color: #333333; } }
+
+@media (min-width: 800px) {
+  .navigation {
+    width: 1200px;
+    background-color: #FFFFFF; }
+  .navigation--info {
+    padding-top: 55px;
+    padding-bottom: 66px; }
+  .navigation--title {
+    color: #000000;
+    font-family: PT Sans, Arial, sans-serif;
+    font-size: 30px;
+    line-height: 26px;
+    margin-bottom: 33px; }
+  .navigation--description {
+    color: #333333;
+    font-family: PT Sans, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
+    line-height: 24px; }
+  .navigation--link {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: PT Sans, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    background-color: #81B3D2;
+    color: #ffffff;
+    width: 460px;
+    padding: 16px 0; }
+    .navigation--link:hover {
+      background-color: #669EC0; } }
 
 /*# sourceMappingURL=style.css.map */
