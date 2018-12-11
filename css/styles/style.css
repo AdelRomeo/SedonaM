@@ -2,7 +2,7 @@
 /*белый*/
 /*серый. background ласт блоков*/
 /*голубой*/
-/*цвет для текста голубых блоков*/
+/*белый. цвет для текста голубых блоков*/
 /*цвет текста белыx блоков*/
 * {
   list-style: none;
@@ -16,7 +16,55 @@ span {
 h1, h2, h3, h4, span, p {
   text-align: center; }
 
-@media (min-width: 800px) {
+@media (max-width: 449px) {
+  header,
+  body {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto; }
+  .main-header {
+    position: relative; }
+  .main-header--main-nav > a {
+    display: inline-block;
+    margin-left: 275px;
+    margin-top: 18px;
+    margin-bottom: 18px; }
+  .main-header--logo {
+    position: absolute;
+    width: 102px;
+    height: 83px;
+    left: 111px;
+    background-image: url(../img/logotyle-mobile.png);
+    z-index: 2; }
+  .main-header::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 300px;
+    left: 20px;
+    top: 140px;
+    background-image: url(../img/text-index.png);
+    background-repeat: no-repeat;
+    background-size: 280px; }
+  .main-header::before {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    height: 57px;
+    left: -440px;
+    width: 1200px;
+    background-image: url(../img/intro-triangle.png);
+    background-repeat: no-repeat; }
+  .header-logo--sedona {
+    background-image: url(../img/back-mobile.jpg);
+    background-repeat: no-repeat;
+    min-height: 392px; }
+  .main-header--list-items {
+    display: none; } }
+
+@media (min-width: 450px) {
+  .main-header--main-nav > a {
+    display: none; }
   header,
   body {
     width: 1200px;
@@ -38,12 +86,15 @@ h1, h2, h3, h4, span, p {
       position: absolute;
       bottom: 57px;
       height: 57px;
-      width: 1200px;
+      width: 100%;
       background-image: url(../img/intro-triangle.png);
       background-repeat: no-repeat; }
   .main-header--logo {
     position: absolute;
-    left: 500px; }
+    width: 188px;
+    height: 96px;
+    left: 500px;
+    background-image: url(../img/logotype-desktop.png); }
   .main-header--list-items {
     display: flex;
     justify-content: space-around;
@@ -171,5 +222,45 @@ h1, h2, h3, h4, span, p {
     background-color: #EEEEEE; }
     .advantages--item__last span {
       color: #333333; } }
+
+@media (min-width: 800px) {
+  .navigation {
+    width: 1200px;
+    background-color: #FFFFFF; }
+  .navigation--info {
+    padding-top: 55px;
+    padding-bottom: 66px; }
+  .navigation--title {
+    color: #000000;
+    font-family: PT Sans, Arial, sans-serif;
+    font-size: 30px;
+    line-height: 26px;
+    margin-bottom: 33px; }
+  .navigation--description {
+    color: #333333;
+    font-family: PT Sans, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
+    line-height: 24px; }
+  .navigation--link {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: PT Sans, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    background-color: #81B3D2;
+    color: #ffffff;
+    width: 460px;
+    padding: 16px 0; }
+    .navigation--link:hover {
+      background-color: #669EC0; } }
 
 /*# sourceMappingURL=style.css.map */
