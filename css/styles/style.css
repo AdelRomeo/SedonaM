@@ -89,7 +89,7 @@ h1, h2, h3, h4, span, p {
     line-height: 26px;
     color: #333333; } }
 
-@media (min-width: 800px) {
+@media (min-width: 450px) {
   .advantages {
     width: 1200px;
     margin-top: 50px; }
