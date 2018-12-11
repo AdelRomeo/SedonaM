@@ -1,11 +1,39 @@
-@media (min-width: 800px) {
-	
 	.main-sedona--greetings{
-		background-color: $main-color;
-	}
+			background-color: $main-color;
+		}
 
 	.main-sedona--title{
 		@include margin-auto;
+	}
+
+@media (max-width: 449px) {
+
+	.main-sedona--greetings{
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-top: 35px;
+	}
+	
+	.main-sedona--title{
+		font-family: $main-font;
+		@include title-style-mob;
+		width: 266px;
+		margin-bottom: 25px;
+	}
+
+	.main-sedona--description{
+		@include margin-auto;
+		text-align: center;
+		@include desc-style-mob;
+		color: $desc;
+		margin-top: 20px;
+	}
+
+}
+
+@media (min-width: 450px) {
+	
+	.main-sedona--title{		
 		@include title-style;
 		width: 450px;
 		margin-top: 0;
@@ -18,6 +46,6 @@
 		font-family: $main-font;
 		font-size: 14px;
 		line-height: 26px;
-		color: #333333;
+		color: $desc;
 	}
 }

@@ -17,3 +17,18 @@
 	line-height: 21px;
 	text-align: center;
 }
+
+@mixin title-style-mob{
+	font-family: $main-font;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 26px;
+	text-align: center;
+}
+
+@mixin desc-style-mob{
+	font-family: $main-font;
+	font-size: 14px;
+	line-height: 26px;
+	text-align: center;
+}
