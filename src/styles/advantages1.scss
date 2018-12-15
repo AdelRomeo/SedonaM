@@ -1,3 +1,116 @@
+.advantages--item__all{
+	font-family: $main-font;
+	color: $col-f-bb;
+}
+
+.advantages--list-item{
+	background-color: $main-color;
+}
+
+
+@media (max-width: 449px) {
+		
+	.advantages{
+		width: 320px;
+		padding-top: 45px;
+		margin-bottom: 70px;
+		}
+
+	.advantages--item__all{
+		background-color: $btn-color-mob;
+		padding-bottom: -10px;
+		& h2{
+			@include title-style-mob;
+			padding-top: 40px;
+		}
+		& span{
+			margin-bottom: 15px;
+			margin-top:  15px;
+			@include desc-style-mob;
+		}
+		& p{
+			@include margin-auto;
+			@include desc-style-mob;
+			width: 270px;
+			padding-bottom: 40px;
+		}
+	}
+
+	.advantages--logo__first{ 
+		width: 320px;
+		height: 260px;
+		background-image: url(../img/photo-city@1x.png);
+		background-repeat: no-repeat;
+		background-position:  -280px -2px;
+	}
+
+	.advantages--list{
+		display: flex;
+		flex-direction: column;
+		margin-bottom: -40px;
+		&__sec{
+			margin-top: -6px;
+		}
+	}
+
+	.advantages--list-item__order{
+		order: 1;
+	}
+
+	.advantages--list-item{
+		position: relative;
+		margin-bottom: 30px;
+		&:first-child{
+			margin-top: 29px;
+		}
+	}
+
+	.advantages--title{
+		@include title-style-mob;
+		text-align: left;
+		margin-left: 70px;
+	}
+
+	.advantages--description{
+		@include desc-style-mob;
+		text-align: left;
+		margin-left: 70px;
+		margin-top: 11px;
+		width: 213px;
+	}
+
+	.advantages--logo{
+		width: 40px;
+		position: absolute;
+		left: 10px;
+		top: -5px;
+	}
+
+	.advantages--natural-city2{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.advantages--logo__sec{
+		background-image: url(../img/photo-bridge@1x.png);
+	}
+
+	.advantages--item__last{
+		color: black;
+		border-bottom: 1px solid #D7D7D7;
+		padding-top: 30px;
+		background-color: $list-color;
+		height: 160px;
+	}
+
+	.advantages--item__last h3{
+		margin-left: 0;
+		text-align: center;
+	}
+
+}
+
+
 @media (min-width: 450px) {
 	
 	.advantages{
@@ -16,10 +129,8 @@
 	.advantages--item__all{
 		padding-top: 50px;
 		padding-bottom: 59px;
-		font-family: $main-font;
-		background-color: $btn-color;
 		width: 400px;
-		color: $col-f-bb;	
+		background-color: $btn-color;
 		& h2{
 			@include title-style;
 			@include margin-auto;
@@ -40,6 +151,7 @@
 	.advantages--logo__first{
 		background-color: $btn-color;
 		width: 800px;
+		background-image: url(../img/photo-city@1x.png);
 	}
 
 	.advantages--list{
@@ -48,7 +160,6 @@
 
 	.advantages--list-item{
 		width: 400px;
-		background-color: $main-color;
 		padding-top: 60px;
 		padding-bottom: 28px;
 	}
