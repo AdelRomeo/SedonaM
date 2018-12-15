@@ -4,6 +4,7 @@
 /*голубой*/
 /*белый. цвет для текста голубых блоков*/
 /*цвет текста белыx блоков*/
+/*голубой для мобильной версии*/
 * {
   list-style: none;
   text-decoration: none;
@@ -144,10 +145,11 @@ h1, h2, h3, h4, span, p {
     text-align: center;
     font-family: PT Sans, Arial, sans-serif;
     font-size: 14px;
-    line-height: 26px;
+    line-height: 21px;
     text-align: center;
     color: #333333;
-    margin-top: 20px; } }
+    margin-top: 20px;
+    line-height: 26px; } }
 
 @media (min-width: 450px) {
   .main-sedona--title {
@@ -168,6 +170,100 @@ h1, h2, h3, h4, span, p {
     line-height: 26px;
     color: #333333; } }
 
+.advantages--item__all {
+  font-family: PT Sans, Arial, sans-serif;
+  color: #ffffff; }
+
+.advantages--list-item {
+  background-color: #FFFFFF; }
+
+@media (max-width: 449px) {
+  .advantages {
+    width: 320px;
+    padding-top: 45px;
+    margin-bottom: 70px; }
+  .advantages--item__all {
+    background-color: #65B4D4;
+    padding-bottom: -10px; }
+    .advantages--item__all h2 {
+      font-family: PT Sans, Arial, sans-serif;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 26px;
+      text-align: center;
+      padding-top: 40px; }
+    .advantages--item__all span {
+      margin-bottom: 15px;
+      margin-top: 15px;
+      font-family: PT Sans, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 21px;
+      text-align: center; }
+    .advantages--item__all p {
+      margin-left: auto;
+      margin-right: auto;
+      font-family: PT Sans, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 21px;
+      text-align: center;
+      width: 270px;
+      padding-bottom: 40px; }
+  .advantages--logo__first {
+    width: 320px;
+    height: 260px;
+    background-image: url(../img/photo-city@1x.png);
+    background-repeat: no-repeat;
+    background-position: -280px -2px; }
+  .advantages--list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -40px; }
+    .advantages--list__sec {
+      margin-top: -6px; }
+  .advantages--list-item__order {
+    order: 1; }
+  .advantages--list-item {
+    position: relative;
+    margin-bottom: 30px; }
+    .advantages--list-item:first-child {
+      margin-top: 29px; }
+  .advantages--title {
+    font-family: PT Sans, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    text-align: left;
+    margin-left: 70px; }
+  .advantages--description {
+    font-family: PT Sans, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    text-align: left;
+    margin-left: 70px;
+    margin-top: 11px;
+    width: 213px; }
+  .advantages--logo {
+    width: 40px;
+    position: absolute;
+    left: 10px;
+    top: -5px; }
+  .advantages--natural-city2 {
+    display: flex;
+    flex-direction: column-reverse; }
+  .advantages--logo__sec {
+    background-image: url(../img/photo-bridge@1x.png); }
+  .advantages--item__last {
+    color: black;
+    border-bottom: 1px solid #D7D7D7;
+    padding-top: 30px;
+    background-color: #EEEEEE;
+    height: 160px; }
+  .advantages--item__last h3 {
+    margin-left: 0;
+    text-align: center; } }
+
 @media (min-width: 450px) {
   .advantages {
     width: 1200px;
@@ -180,10 +276,8 @@ h1, h2, h3, h4, span, p {
   .advantages--item__all {
     padding-top: 50px;
     padding-bottom: 59px;
-    font-family: PT Sans, Arial, sans-serif;
-    background-color: #81B3D2;
     width: 400px;
-    color: #ffffff; }
+    background-color: #81B3D2; }
     .advantages--item__all h2 {
       font-family: PT Sans, Arial, sans-serif;
       font-weight: bold;
@@ -210,12 +304,12 @@ h1, h2, h3, h4, span, p {
       width: 270px; }
   .advantages--logo__first {
     background-color: #81B3D2;
-    width: 800px; }
+    width: 800px;
+    background-image: url(../img/photo-city@1x.png); }
   .advantages--list {
     display: flex; }
   .advantages--list-item {
     width: 400px;
-    background-color: #FFFFFF;
     padding-top: 60px;
     padding-bottom: 28px; }
   .advantages--logo {
