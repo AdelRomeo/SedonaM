@@ -345,16 +345,63 @@ h1, h2, h3, h4, span, p {
     .advantages--item__last span {
       color: #333333; } }
 
-@media (min-width: 800px) {
+.navigation {
+  width: 320px;
+  background-color: #FFFFFF; }
+
+.navigation--title {
+  color: #000000;
+  font-family: PT Sans, Arial, sans-serif; }
+
+.navigation--link {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: PT Sans, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+  padding: 16px 0; }
+  .navigation--link:hover {
+    background-color: #669EC0; }
+
+@media (max-width: 449px) {
+  .navigation--map img {
+    display: none; }
+  .navigation--map {
+    background-image: url(../img/map-mobile.jpg);
+    width: 320px;
+    height: 350px; }
+  .navigation--info h3 {
+    padding-bottom: 15px;
+    font-family: PT Sans, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center; }
+  .navigation--info p {
+    font-family: PT Sans, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    line-height: 24px;
+    color: #333333;
+    padding: 0 20px;
+    padding-bottom: 40px; }
+  .navigation--link {
+    background-color: #65B4D4;
+    width: 280px;
+    margin-bottom: 50px; } }
+
+@media (min-width: 450px) {
   .navigation {
-    width: 1200px;
-    background-color: #FFFFFF; }
+    width: 1200px; }
   .navigation--info {
     padding-top: 55px;
     padding-bottom: 66px; }
   .navigation--title {
-    color: #000000;
-    font-family: PT Sans, Arial, sans-serif;
     font-size: 30px;
     line-height: 26px;
     margin-bottom: 33px; }
@@ -370,20 +417,8 @@ h1, h2, h3, h4, span, p {
     margin-bottom: 48px;
     line-height: 24px; }
   .navigation--link {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: PT Sans, Arial, sans-serif;
-    font-weight: bold;
-    font-size: 21px;
-    line-height: 26px;
-    text-align: center;
     background-color: #81B3D2;
-    color: #ffffff;
-    width: 460px;
-    padding: 16px 0; }
-    .navigation--link:hover {
-      background-color: #669EC0; } }
+    width: 460px; } }
 
 @media (min-width: 800px) {
   .main-footer {
