@@ -1,8 +1,64 @@
-@media (min-width: 800px){
+	.navigation{
+		width: 320px;
+		background-color: $main-color;
+		}
+
+	.navigation--title{
+		color: #000000;
+		font-family: $main-font;
+	}
+	
+	.navigation--link{
+		display: block;
+		@include margin-auto;
+		@include title-style;
+		color: $col-f-bb;
+		padding: 16px 0;
+		&:hover{
+			background-color: #669EC0;
+		}
+	}
+
+
+@media (max-width: 449px){
+	
+	.navigation--map img{
+		display: none;
+	}
+
+	.navigation--map{
+		background-image: url(../img/map-mobile.jpg);
+		width: 320px;
+		height: 350px;
+	}
+
+	.navigation--info{		
+		& h3{
+			padding-bottom: 15px; 
+			@include title-style;
+		}
+		& p{
+			@include desc-style-mob;
+			line-height: 24px;
+			color: $desc;
+			padding: 0 20px;
+			padding-bottom: 40px;
+		}
+	}
+
+	.navigation--link{
+		background-color: $btn-color-mob;
+		width: 280px;
+		margin-bottom: 50px;
+	}
+
+}
+
+
+@media (min-width: 450px){
 	
 	.navigation{
 		width: 1200px;
-		background-color: $main-color;
 	}
 
 	.navigation--info{
@@ -10,9 +66,7 @@
 		padding-bottom: 66px;
 	}
 
-	.navigation--title{
-		color: #000000;
-		font-family: $main-font;
+	.navigation--title{	
 		font-size: 30px;
 		line-height: 26px;
 		margin-bottom: 33px;
@@ -28,15 +82,7 @@
 	}
 
 	.navigation--link{
-		display: block;
-		@include margin-auto;
-		@include title-style;
-		background-color: $btn-color;		
-		color: $col-f-bb;
+		background-color: $btn-color;
 		width: 460px;
-		padding: 16px 0;
-		&:hover{
-			background-color: #669EC0;
-		}
 	}
 }
