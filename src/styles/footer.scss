@@ -1,15 +1,8 @@
-@media (min-width: 800px) {
-	
-	.main-footer{
-		display: flex;
-		justify-content: space-around;
-		-ms-align-items: center;
-		align-items: center;
-		width: 1200px;
-		padding-top: 38px;
-		padding-bottom: 36px;
-	}
-	.main-footer span:first-child{
+  .main-footer{
+  	background-color: $main-color;
+  }
+
+  .main-footer span:first-child{
 		@include title-style;
 	}
 
@@ -29,7 +22,7 @@
 	.main-footer--social{
 		position: relative;
 		display: block;
-		background-color: $btn-color;
+		background-color: $btn-color-mob;
 		width: 46px;
 		height: 48px;
 		&:hover{
@@ -54,5 +47,44 @@
 
 	.main-footer img{
 		position: absolute;
+	}
+
+
+@media (max-width: 450px){
+
+	.main-footer{
+		padding-top: 35px;
+		padding-bottom: 25px;
+	}
+
+	.main-footer--list{
+		@include margin-auto;
+		margin-bottom: 38px;
+		margin-top: 38px;
+	}
+}
+
+
+@media (min-width: 450px) {
+	
+	.main-footer{
+		display: flex;
+		justify-content: space-around;
+		-ms-align-items: center;
+		align-items: center;
+		width: 1200px;
+		padding-top: 38px;
+		padding-bottom: 36px;
+	}
+
+	.main-footer--list{
+		display: flex;
+		justify-content: space-between;
+		background-color: $main-color;		
+		width: 151px;
+	}
+
+	.main-footer--social{
+		background-color: $btn-color;
 	}
 }
