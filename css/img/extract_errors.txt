@@ -1,0 +1,3 @@
+[Fri Jan 25 2019 15:57:16 GMT+0700 (RTZ 6 (зима))] Layer "like-icon.svg": Duplicate path: like-icon.svg
+[Fri Jan 25 2019 15:57:16 GMT+0700 (RTZ 6 (зима))] Layer "like-icon.svg": Duplicate path: like-icon.svg
+[Fri Jan 25 2019 15:57:16 GMT+0700 (RTZ 6 (зима))] Layer "like-icon.svg": Duplicate path: like-icon.svg
