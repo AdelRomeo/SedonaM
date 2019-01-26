@@ -492,4 +492,52 @@ h1, h2, h3, h4, span, p {
   .main-footer--social {
     background-color: #81B3D2; } }
 
+@media (min-width: 450px) {
+  .photo {
+    margin-top: 70px; }
+  .photo--list {
+    display: flex;
+    flex-wrap: wrap; }
+  .photo-item {
+    position: relative; }
+  .photo-item > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 187px;
+    color: #FFFFFF;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    padding-top: 15px;
+    padding-bottom: 15px; }
+  .photo--name {
+    margin-left: 20px;
+    font-family: PT Sans, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center; }
+    .photo--name h3 {
+      padding-bottom: 7px;
+      text-align: left; }
+    .photo--name p {
+      text-align: left; }
+  .photo-like {
+    padding-right: 30px;
+    position: relative; }
+  .photo-like img {
+    position: absolute;
+    right: 63px;
+    bottom: 1px; }
+  .photo-item:nth-child(1) {
+    margin-bottom: -4px; }
+    .photo-item:nth-child(1) > div {
+      top: 321px; }
+    .photo-item:nth-child(1) img {
+      right: 70px; }
+  .player {
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: -50px; } }
+
 /*# sourceMappingURL=style.css.map */

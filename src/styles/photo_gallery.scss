@@ -1,0 +1,78 @@
+
+
+@media (max-width: 449px){
+
+}
+
+@media (min-width: 450px){
+
+	.photo{
+		margin-top: 70px;
+	}
+
+	.photo--list{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.photo-item{
+		position: relative;
+	}
+
+	.photo-item>div{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		position: absolute;
+		top: 187px;
+		color: $main-color;
+		width: 100%;
+		background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4));
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	.photo--name{
+		margin-left: 20px;
+		@include desc-style;
+		& h3{
+			padding-bottom: 7px;
+			text-align: left;
+		}
+		& p{
+			text-align: left;
+		}
+	}
+
+	.photo-like{
+		padding-right: 30px;
+		position: relative;
+	}
+
+	.photo-like img{
+		position: absolute;
+		right: 63px;
+		bottom: 1px;
+	}
+
+	.photo-item:nth-child(1){
+		margin-bottom: -4px;
+		&>div{
+			top: 321px;
+		}
+		& img{
+			right: 70px;
+		}
+	}
+
+	.player{
+		margin-left: 200px;
+		margin-right: 200px;
+		margin-top: -50px;
+	}
+
+	.header-logo--sedona{
+		
+	}
+
+}
