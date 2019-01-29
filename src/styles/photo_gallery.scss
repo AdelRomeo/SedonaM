@@ -2,6 +2,98 @@
 
 @media (max-width: 449px){
 
+	.main-sedona{
+		
+	}
+
+	.photo{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.main-sedona--greetings{
+		margin-bottom: 25px;
+	}
+
+	.main-sedona--description br{
+		display: none;
+	}
+
+	.photo-item{
+		overflow: hidden;
+		width: 280px;
+		padding-top: 20px;
+		&:after{
+			content: "";
+			display: block;
+			height: 1px;
+			width: 100%;
+			background-color: #E6E6E6;
+		}
+	}
+
+	.photo-item>img{
+		margin-left: -75px;
+		height: 280px;
+	}
+
+	.photo-item:nth-child(1){
+
+		&:before{
+			content: "";
+			display: block;
+			height: 1px;
+			width: 600px;
+			background-color: #E6E6E6;
+		}
+		&>img{
+			margin-top: 20px;
+			margin-left: -280px;
+		}
+	}
+
+	.photo-like{
+		display: flex;
+		align-items: flex-start;
+		margin-bottom: 10px;
+	}
+
+	.photo-like img{
+		margin-right: 15px;
+	}
+
+	.photo--name,
+	.photo-like span{
+		font-family: $main-font;
+		font-size: 14px;
+		line-height: 24px;
+		font-weight: bold;
+		text-align: left;
+		& p{
+			font-weight: normal;
+			text-align: left;
+		}	
+		& h3{
+			padding-top: 10px;
+			text-align: left;
+		}	
+	}
+
+	.navigation{
+		margin-top: 30px;
+	}
+
+	.navigation--map{
+		display: none;
+	}
+
+	.mobile--player{
+		background-image: url(..//img/sedona-photo-video.jpg);
+		background-size: cover;
+		width: 320px;
+		height: 270px;
+	}
+		
 }
 
 @media (min-width: 450px){
@@ -71,8 +163,8 @@
 		margin-top: -50px;
 	}
 
-	.header-logo--sedona{
-		
+	.mobile--player{
+		display: none;
 	}
 
 }
