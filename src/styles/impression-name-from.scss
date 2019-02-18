@@ -1,0 +1,55 @@
+
+
+@media (max-width: 449px){
+
+}
+
+@media (min-width: 450px){
+
+	.impression-name{
+		width: 960px;
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 60px;
+	}
+
+	.impression,
+	.name{
+		width: 50%;
+
+	}
+
+	.impression--headline,
+	.name--headline{
+		@include title-style;
+		text-align: left;
+		margin-left: 50px;
+	}
+
+	.impression-form{
+		display: flex;
+		flex-direction: column;
+		margin-top: 55px;
+	}
+
+	.impression-form label{
+		cursor:pointer;
+		margin-bottom: 55px;
+		@include title-style-mob;
+		text-align: left;
+	}
+
+	.impression-form label span{
+		display: inline;
+		text-align: left;
+		padding-left: 40px;
+	}
+
+	.impression-form label input{
+	  transform:scale(4.5);
+	  opacity:0.9;
+	  cursor:pointer;
+	}
+
+}
