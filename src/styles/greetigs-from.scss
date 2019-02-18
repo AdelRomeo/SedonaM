@@ -1,0 +1,33 @@
+.greetigs-from{
+	background-color: $main-color;
+	font-family: $main-font;
+}
+
+@media (max-width: 449px){
+
+}
+
+@media (min-width: 450px){
+
+	.greetigs-from{
+		margin-top: 50px;
+	}
+
+	.greetigs-from--headline{
+		color: #000;
+		font-weight: bold;
+		font-size: 30px;
+		line-height: 26px;
+		margin-bottom: 30px;
+	}
+
+	.greetigs-from--paragraph{
+		font-family: $main-font;
+		font-size: 14px;
+		line-height: 24px;
+		color: $desc;
+		width: 440px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
