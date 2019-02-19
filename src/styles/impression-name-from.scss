@@ -12,6 +12,7 @@
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 60px;
+		justify-content: space-between;
 	}
 
 	.impression,
@@ -27,7 +28,8 @@
 		margin-left: 50px;
 	}
 
-	.impression-form{
+	.impression-form,
+	.name-form{
 		display: flex;
 		flex-direction: column;
 		margin-top: 55px;
@@ -50,6 +52,43 @@
 	  transform:scale(4.5);
 	  opacity:0.9;
 	  cursor:pointer;
+	}
+
+	.name{
+		padding-left: 120px;
+	}
+
+	.name-form label{
+		cursor:pointer;
+		margin-bottom: 38px;
+		text-align: left;
+		font-size: 14px;
+		line-height: 26px;
+	}
+
+	.name-form input{
+		background-color: #F2F2F2;
+		padding: 15px;
+		margin-left: 10px;
+		border: 0px;
+	}
+
+	.name-form input::placeholder{
+		@include title-style-mob;
+		text-align: left;
+		color: #000;
+	}
+
+	#name1{
+		width: 320px;
+	}
+
+	#name2{
+		width: 280px;
+	}
+
+	#name3{
+		width: 285px;
 	}
 
 }
