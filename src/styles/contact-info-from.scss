@@ -1,0 +1,44 @@
+@media (max-width: 449px){
+
+}
+
+@media (min-width: 450px){
+
+	.contact-info{
+		margin-top: 60px;
+		width: 960px;
+		@include margin-auto;
+	}
+
+	.contact-info--headline{
+		@include title-style;
+		margin-bottom: 70px;
+	}
+
+	.contact-info form{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.contact-info--form label{
+		text-align: left;
+		font-size: 14px;
+		line-height: 26px;
+	}
+
+	.contact-info--form input{
+		background-color: #F2F2F2;
+		padding: 15px;
+		margin-left: 10px;
+		border: 0px;
+	}
+
+	.contact-info--form input::placeholder{
+		@include title-style-mob;
+		text-align: left;
+		color: #000;
+	}
+
+
+
+}
