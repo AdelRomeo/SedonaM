@@ -4,13 +4,13 @@
 
 @media (min-width: 450px){
 
-	.contact-info{
-		margin-top: 60px;
+	.visited{
+		margin-top: 70px;
 		width: 960px;
 		@include margin-auto;
 	}
 
-	.contact-info--headline{
+	.visited--headline{
 		position: relative;
 		@include title-style;
 		margin-bottom: 70px;
@@ -38,30 +38,28 @@
 		}
 	}
 
-	.contact-info form{
+	.visited-form{
 		display: flex;
 		justify-content: space-between;
 	}
 
-	.contact-info--form label{
-		text-align: left;
-		font-size: 14px;
-		line-height: 26px;
+	.visited-form input{
+		margin-left: 70px;
+	  transform:scale(4.5);
+	  opacity:0.9;
+	  cursor:pointer;
+
 	}
 
-	.contact-info--form input{
-		background-color: #F2F2F2;
-		padding: 15px;
-		margin-left: 10px;
-		border: 0px;
+	.visited-form input[name="diavol"]{
+		margin-left: 0;
 	}
 
-	.contact-info--form input::placeholder{
+	.name-sight{
+		padding-left: 30px;
 		@include title-style-mob;
-		text-align: left;
 		color: #000;
+		font-style: normal;
 	}
-
-
 
 }
