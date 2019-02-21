@@ -4,13 +4,14 @@
 
 @media (min-width: 450px){
 
-	.contact-info{
-		margin-top: 60px;
+	.feetback{
+		margin-top: 70px;
+		margin-bottom: 90px;
 		width: 960px;
 		@include margin-auto;
 	}
 
-	.contact-info--headline{
+	.feetback--headline{
 		position: relative;
 		@include title-style;
 		margin-bottom: 70px;
@@ -38,30 +39,40 @@
 		}
 	}
 
-	.contact-info form{
-		display: flex;
-		justify-content: space-between;
-	}
-
-	.contact-info--form label{
-		text-align: left;
-		font-size: 14px;
-		line-height: 26px;
-	}
-
-	.contact-info--form input{
+	.feetback--form textarea{
 		background-color: #F2F2F2;
-		padding: 15px;
-		margin-left: 10px;
-		border: 0px;
+		width: 100%;
+		padding: 10px;
+		border:0;
 	}
 
-	.contact-info--form input::placeholder{
+	.feetback--form textarea::placeholder{
 		@include title-style-mob;
 		text-align: left;
 		color: #000;
 	}
 
+	.feetback--btn-rules{
+		display: flex;
+		justify-content: space-between;
+		margin-top: 50px;
+	}
 
+	.feetback-btn{
+		@include title-style;
+		text-align: center;
+		color: $col-f-bb;
+		background-color: $btn-color;
+		display: inline-block;
+		width: 480px;
+		padding: 10px 0;
+	}
+
+	.feetback-rules{
+		font-family: $main-font;
+		font-size: 14px;
+		line-height: 26px;
+		margin-right: -20px;
+	}
 
 }

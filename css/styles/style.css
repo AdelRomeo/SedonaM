@@ -703,12 +703,33 @@ h1, h2, h3, h4, span, p {
     margin-left: auto;
     margin-right: auto; }
   .contact-info--headline {
+    position: relative;
     font-family: PT Sans, Arial, sans-serif;
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
     text-align: center;
-    margin-bottom: 70px; }
+    margin-bottom: 70px;
+    background-color: #fff;
+    z-index: 2; }
+    .contact-info--headline::before {
+      z-index: 3;
+      position: absolute;
+      left: -20px;
+      top: 12px;
+      content: " ";
+      width: 280px;
+      height: 2px;
+      background-color: #DBDBDB; }
+    .contact-info--headline::after {
+      z-index: 3;
+      position: absolute;
+      right: -20px;
+      top: 12px;
+      content: " ";
+      width: 280px;
+      height: 2px;
+      background-color: #DBDBDB; }
   .contact-info form {
     display: flex;
     justify-content: space-between; }
@@ -729,5 +750,129 @@ h1, h2, h3, h4, span, p {
     text-align: center;
     text-align: left;
     color: #000; } }
+
+@media (min-width: 450px) {
+  .visited {
+    margin-top: 70px;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto; }
+  .visited--headline {
+    position: relative;
+    font-family: PT Sans, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 70px;
+    background-color: #fff;
+    z-index: 2; }
+    .visited--headline::before {
+      z-index: 3;
+      position: absolute;
+      left: -20px;
+      top: 12px;
+      content: " ";
+      width: 280px;
+      height: 2px;
+      background-color: #DBDBDB; }
+    .visited--headline::after {
+      z-index: 3;
+      position: absolute;
+      right: -20px;
+      top: 12px;
+      content: " ";
+      width: 280px;
+      height: 2px;
+      background-color: #DBDBDB; }
+  .visited-form {
+    display: flex;
+    justify-content: space-between; }
+  .visited-form input {
+    margin-left: 70px;
+    transform: scale(4.5);
+    opacity: 0.9;
+    cursor: pointer; }
+  .visited-form input[name="diavol"] {
+    margin-left: 0; }
+  .name-sight {
+    padding-left: 30px;
+    font-family: PT Sans, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #000;
+    font-style: normal; } }
+
+@media (min-width: 450px) {
+  .feetback {
+    margin-top: 70px;
+    margin-bottom: 90px;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto; }
+  .feetback--headline {
+    position: relative;
+    font-family: PT Sans, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 70px;
+    background-color: #fff;
+    z-index: 2; }
+    .feetback--headline::before {
+      z-index: 3;
+      position: absolute;
+      left: -20px;
+      top: 12px;
+      content: " ";
+      width: 280px;
+      height: 2px;
+      background-color: #DBDBDB; }
+    .feetback--headline::after {
+      z-index: 3;
+      position: absolute;
+      right: -20px;
+      top: 12px;
+      content: " ";
+      width: 280px;
+      height: 2px;
+      background-color: #DBDBDB; }
+  .feetback--form textarea {
+    background-color: #F2F2F2;
+    width: 100%;
+    padding: 10px;
+    border: 0; }
+  .feetback--form textarea::placeholder {
+    font-family: PT Sans, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    text-align: left;
+    color: #000; }
+  .feetback--btn-rules {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px; }
+  .feetback-btn {
+    font-family: PT Sans, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    text-align: center;
+    color: #ffffff;
+    background-color: #81B3D2;
+    display: inline-block;
+    width: 480px;
+    padding: 10px 0; }
+  .feetback-rules {
+    font-family: PT Sans, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    margin-right: -20px; } }
 
 /*# sourceMappingURL=style.css.map */
