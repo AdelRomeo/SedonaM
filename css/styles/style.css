@@ -608,25 +608,148 @@ h1, h2, h3, h4, span, p {
   background-color: #FFFFFF;
   font-family: PT Sans, Arial, sans-serif; }
 
-@media (min-width: 450px) {
+.greetigs-from--headline {
+  color: #000;
+  font-weight: bold; }
+
+.greetigs-from--paragraph {
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333; }
+
+@media (max-width: 449px) {
   .greetigs-from {
-    margin-top: 50px; }
+    margin-top: 40px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e5e5e5; }
   .greetigs-from--headline {
-    color: #000;
+    font-family: PT Sans, Arial, sans-serif;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 18px;
     line-height: 26px;
-    margin-bottom: 30px; }
+    text-align: center; }
   .greetigs-from--paragraph {
     font-family: PT Sans, Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
-    color: #333333;
+    margin-top: 33px; } }
+
+@media (min-width: 450px) {
+  .greetigs-from {
+    margin-top: 50px; }
+  .greetigs-from--headline {
+    font-size: 30px;
+    line-height: 26px;
+    margin-bottom: 30px; }
+  .greetigs-from--paragraph {
     width: 440px;
     margin-left: auto;
     margin-right: auto; } }
 
+.name-form input::placeholder,
+.contact-info--form input::placeholder {
+  font-family: PT Sans, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-align: left;
+  color: #000; }
+
+.name-form input,
+.contact-info--form input {
+  background-color: #F2F2F2;
+  padding: 15px;
+  margin-left: 10px;
+  border: 0px; }
+
+.impression-form label input {
+  transform: scale(4.5);
+  opacity: 0.9;
+  cursor: pointer; }
+
+@media (max-width: 449px) {
+  .mob-order {
+    font-family: PT Sans, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    position: relative; }
+  .impression-name {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 15px; }
+  .contact-info--headline {
+    margin-bottom: 20px; }
+  .impression--headline,
+  .name--headline,
+  .contact-info--headline {
+    font-family: PT Sans, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center; }
+  .impression-form {
+    display: flex;
+    flex-direction: column; }
+  .impression-form label {
+    font-family: PT Sans, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    text-align: left;
+    color: #000;
+    margin-top: 20px; }
+  .impression-form label:first-child {
+    margin-top: 0px; }
+  .impression--headline {
+    margin-top: 15px;
+    margin-bottom: 15px; }
+  .impression-form label input {
+    margin-left: 30px;
+    margin-top: 20px; }
+  .imp-name {
+    text-align: left;
+    margin-left: 40px;
+    display: inline; }
+  .name--headline {
+    margin-bottom: 20px; }
+  .name-form,
+  .contact-info--form {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column; }
+  .contact-info--form input {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px; }
+  .name-form label,
+  .contact-info--form label {
+    font-size: 14px;
+    line-height: 26px;
+    text-align: left; }
+  .name-form label {
+    margin-bottom: 40px; }
+  #name1 {
+    width: 205px; }
+  .name {
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 0px; }
+  .impression {
+    margin-top: 320px;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 30px; }
+  .contact-info {
+    position: absolute;
+    top: 355px;
+    width: 320px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e5e5; } }
+
 @media (min-width: 450px) {
+  .contact-info--form br {
+    display: none; }
   .impression-name {
     width: 960px;
     display: flex;
@@ -664,10 +787,6 @@ h1, h2, h3, h4, span, p {
     display: inline;
     text-align: left;
     padding-left: 40px; }
-  .impression-form label input {
-    transform: scale(4.5);
-    opacity: 0.9;
-    cursor: pointer; }
   .name {
     padding-left: 120px; }
   .name-form label {
@@ -681,14 +800,6 @@ h1, h2, h3, h4, span, p {
     padding: 15px;
     margin-left: 10px;
     border: 0px; }
-  .name-form input::placeholder {
-    font-family: PT Sans, Arial, sans-serif;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 26px;
-    text-align: center;
-    text-align: left;
-    color: #000; }
   #name1 {
     width: 320px; }
   #name2 {

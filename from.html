@@ -24,35 +24,37 @@
 	<main>
 		<div class="greetigs-from">
 			<h2 class="greetigs-from--headline">ОСТАВЬТЕ СВОЙ ОТЗЫВ</h2>
-			<p class="greetigs-from--paragraph">ПОМОГИЕТ НАШИМ ОТЕЛЯМ СТАТЬ ЛУЧШЕ! ОСТАВСТЕ ОТЗЫВ О НИХ,
+			<p class="greetigs-from--paragraph">ПОМОГАЕТ НАШИМ ОТЕЛЯМ СТАТЬ ЛУЧШЕ! ОСТАВСТЕ ОТЗЫВ О НИХ,
 			 А ТАКЖЕ О ПОСЕЩЕННЫХ ВАМИ ДОСТОПРИМЕЧАТЕЛЬНОСТЯХ</p>
 		</div>
+			
+		<div class="mob-order">
+			<div class="impression-name">
+				<section class="impression">
+					<h3  class="impression--headline">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</h3>
+					<form class="impression-form">
+						<label><input type="radio" name="impression-radio" checked><span class="imp-name">Скорее положительные</span> </label>
+						<label><input type="radio" name="impression-radio"><span class="imp-name"> Скорее отрицательные</span> </label>
+						<label><input type="radio" name="impression-radio"><span class="imp-name">Затрудняюсь ответить</span> </label>
+					</form>
+				</section>
+				<section class="name">
+					<h3  class="name--headline">ПРЕДСТАВТЕСЬ:</h3>
+					<form class="name-form">
+						<label>ИМЯ*: <input type="text" name="first-name" placeholder="Петр" id="name1"></label>
+						<label>ФАМИЛИЯ*: <input type="text" name="last-name" placeholder="Иванов" id="name2"></label>
+						<label>ОТЧЕСТВО: <input type="text" name="second-name" placeholder="Александрович" id="name3"></label>
+					</form>
+				</section>
+			</div>
 
-		<div class="impression-name">
-			<section class="impression">
-				<h3  class="impression--headline">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</h3>
-				<form class="impression-form">
-					<label><input type="radio" name="impression-radio" checked><span>Скорее положительные</span> </label>
-					<label><input type="radio" name="impression-radio"><span> Скорее отрицательные</span> </label>
-					<label><input type="radio" name="impression-radio"><span>Затрудняюсь ответить</span> </label>
+			<div class="contact-info">
+				<h3 class="contact-info--headline">КОНТАКТНАЯ ИНФОРМАЦИЯ:</h3>
+				<form class="contact-info--form">
+					<label>ТЕЛЕФОН*:<br><input type="text" name="phone_number" placeholder="Введите телефон"></label>
+					<label>ЭЛЕКТРОННАЯ ПОЧТА*:<br><input type="text" name="email" placeholder="Введите e-mail"></label>
 				</form>
-			</section>
-			<section class="name">
-				<h3  class="name--headline">ПРЕДСТАВТЕСЬ:</h3>
-				<form class="name-form">
-					<label>ИМЯ*: <input type="text" name="first-name" placeholder="Петр" id="name1"></label>
-					<label>ФАМИЛИЯ*: <input type="text" name="last-name" placeholder="Иванов" id="name2"></label>
-					<label>ОТЧЕСТВО: <input type="text" name="second-name" placeholder="Александрович" id="name3"></label>
-				</form>
-			</section>
-		</div>
-
-		<div class="contact-info">
-			<h3 class="contact-info--headline">КОНТАКТНАЯ ИНФОРМАЦИЯ:</h3>
-			<form class="contact-info--form">
-				<label>ТЕЛЕФОН*:<input type="text" name="phone_number" placeholder="Введите телефон"></label>
-				<label>ЭЛЕКТРОННАЯ ПОЧТА*:<input type="text" name="email" placeholder="Введите e-mail"></label>
-			</form>
+			</div>
 		</div>
 
 		<div class="visited">
@@ -68,7 +70,7 @@
 		<div class="feetback">
 			<h3 class="feetback--headline">ОПИШИТЕ ВСЕ СВОИ ЭМОЦИИ:</h3>
 			<form class="feetback--form">
-				<textarea placeholder="Опишите подробно все свои восторги" cols="100" rows="8"></textarea>
+				<textarea placeholder="Опишите подробно все свои восторги" ></textarea>
 			</form>
 			<div class="feetback--btn-rules">
 				<a href="" class="feetback-btn">ОТПРАВИТЬ ОТЗЫВ</a>

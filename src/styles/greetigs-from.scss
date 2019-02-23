@@ -3,9 +3,35 @@
 	font-family: $main-font;
 }
 
+.greetigs-from--headline{
+	color: #000;
+	font-weight: bold;
+}
+
+.greetigs-from--paragraph{
+		@include from-label;
+		color: $desc;
+	}
+
 @media (max-width: 449px){
 
+	.greetigs-from{
+		margin-top: 40px;
+		padding-bottom: 15px;
+		border-bottom: 1px solid #e5e5e5;
+	}
+
+	.greetigs-from--headline{
+		@include title-style-mob;
+	}
+
+	.greetigs-from--paragraph{
+		@include from-label;
+		margin-top: 33px;
+	}
+
 }
+
 
 @media (min-width: 450px){
 
@@ -14,18 +40,12 @@
 	}
 
 	.greetigs-from--headline{
-		color: #000;
-		font-weight: bold;
 		font-size: 30px;
 		line-height: 26px;
 		margin-bottom: 30px;
 	}
 
 	.greetigs-from--paragraph{
-		font-family: $main-font;
-		font-size: 14px;
-		line-height: 24px;
-		color: $desc;
 		width: 440px;
 		margin-left: auto;
 		margin-right: auto;
