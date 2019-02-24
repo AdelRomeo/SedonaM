@@ -862,6 +862,39 @@ h1, h2, h3, h4, span, p {
     text-align: left;
     color: #000; } }
 
+@media (max-width: 449px) {
+  .visited {
+    margin-top: 15px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5; }
+  .visited--headline {
+    font-family: PT Sans, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center; }
+  .visited-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px; }
+  .visited-form input {
+    transform: scale(4.5);
+    opacity: 0.9;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-left: 30px; }
+  .visited-form input[name="diavol"] {
+    margin-top: 0; }
+  .name-sight {
+    margin-left: 40px;
+    font-style: normal;
+    font-family: PT Sans, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center; } }
+
 @media (min-width: 450px) {
   .visited {
     margin-top: 70px;
@@ -916,6 +949,44 @@ h1, h2, h3, h4, span, p {
     color: #000;
     font-style: normal; } }
 
+@media (max-width: 449px) {
+  .feetback--headline {
+    font-family: PT Sans, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center; }
+  .feetback--form textarea {
+    margin-top: 20px;
+    width: calc(100% - 20px);
+    height: 160px;
+    background-color: #F2F2F2;
+    border: 0;
+    padding: 10px; }
+    .feetback--form textarea::placeholder {
+      font-family: PT Sans, Arial, sans-serif;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 26px;
+      text-align: center;
+      text-align: left;
+      color: #000; }
+  .feetback-btn {
+    font-family: PT Sans, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    text-align: center;
+    color: #ffffff;
+    background-color: #65B4D4;
+    display: inline-block;
+    width: 100%;
+    padding: 16px 0;
+    margin-top: 50px; }
+  .feetback-rules {
+    display: none; } }
+
 @media (min-width: 450px) {
   .feetback {
     margin-top: 70px;
@@ -955,7 +1026,10 @@ h1, h2, h3, h4, span, p {
     background-color: #F2F2F2;
     width: 100%;
     padding: 10px;
-    border: 0; }
+    border: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: -10px; }
   .feetback--form textarea::placeholder {
     font-family: PT Sans, Arial, sans-serif;
     font-weight: bold;

@@ -1,5 +1,40 @@
 @media (max-width: 449px){
 
+		.visited{
+			margin-top: 15px;
+			padding-bottom: 30px;
+			margin-bottom: 20px;
+			border-bottom: 1px solid #e5e5e5;
+		}
+
+		.visited--headline{
+			@include title-style-mob;
+		}
+
+		.visited-form{
+			display: flex;
+			flex-direction: column;
+			margin-top: 35px;
+		}
+
+		.visited-form input{
+	  transform:scale(4.5);
+	  opacity:0.9;
+	  cursor:pointer;
+	  margin-top: 50px;
+	  margin-left: 30px;
+		}
+
+		.visited-form input[name="diavol"]{
+			margin-top: 0;
+		}
+
+		.name-sight{
+			margin-left: 40px;
+			font-style: normal;
+			@include title-style-mob;
+		}
+
 }
 
 @media (min-width: 450px){
@@ -48,7 +83,6 @@
 	  transform:scale(4.5);
 	  opacity:0.9;
 	  cursor:pointer;
-
 	}
 
 	.visited-form input[name="diavol"]{
